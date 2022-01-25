@@ -32,10 +32,10 @@ jobs:
         run: dotnet build --no-restore
       - name: Publish
         run: dotnet publish ./dotnetSimpleApi.csproj -c release -o ./web/
-      - name: list folders
-        run: ls -l
+      - name: prep folders
+        run: ls -l && mkdir web/.ebextensions
       - name: ebextension
-        run: mv .ebextensions web/ && ls -l
+        run: mv ebextensions/* web/.ebextensions/ && ls -l
       - name: Zip
         run: cd ./web && ls -l && zip -r ../web.zip *
       - name: Get Timestamp Action
