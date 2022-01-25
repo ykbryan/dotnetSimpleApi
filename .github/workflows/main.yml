@@ -32,12 +32,10 @@ jobs:
         run: dotnet build --no-restore
       - name: Publish
         run: dotnet publish ./dotnetSimpleApi.csproj -c release -o ./web/
-      - name: prep folders
-        run: ls -l && mkdir web/.ebextensions
       - name: ebextension
-        run: mv ebextensions/* web/.ebextensions/ && ls -l
+        run: ls -la && mv .ebextensionns web/
       - name: Zip
-        run: cd ./web && ls -l && zip -r ../web.zip *
+        run: cd ./web && ls -la && zip -r ../web.zip *
       - name: Get Timestamp Action
         # You may pin to the exact commit or the version.
         # uses: nanzm/get-time-action@5fb6a88787f272aeb246a10ebb8fabeb5f3c7b9c
