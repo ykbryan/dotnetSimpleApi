@@ -32,6 +32,8 @@ jobs:
         run: dotnet build --no-restore
       - name: Publish
         run: dotnet publish ./dotnetSimpleApi.csproj -c release -o ./web/
+      - name: list folders
+        run: ls -l
       - name: ebextension
         run: mv .ebextensions web/ && ls -l
       - name: Zip
