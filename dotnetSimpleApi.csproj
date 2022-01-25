@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup> 
-    <Content Include=".ebextensions\**"> 
+    <Content Include=".ebextensions/**"> 
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory> 
     </Content> 
   </ItemGroup>
