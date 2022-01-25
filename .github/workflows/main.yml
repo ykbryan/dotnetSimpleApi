@@ -33,7 +33,7 @@ jobs:
       - name: Publish
         run: dotnet publish ./dotnetSimpleApi.csproj -c release -o ./web/
       - name: ebextension
-        run: ls -la && mv .ebextensionns web/
+        run: ls -la && mv .ebextensions web/
       - name: Zip
         run: cd ./web && ls -la && zip -r ../web.zip *
       - name: Get Timestamp Action
