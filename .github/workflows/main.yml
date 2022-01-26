@@ -33,7 +33,7 @@ jobs:
       - name: Publish
         run: dotnet publish ./dotnetSimpleApi.csproj -c release -o ./web/
       - name: Zip
-        run: cd ./web && zip -r ../web.zip *
+        run: cd ./web && ls -la && zip -r ../web.zip *
       - name: Get Timestamp Action
         # You may pin to the exact commit or the version.
         # uses: nanzm/get-time-action@5fb6a88787f272aeb246a10ebb8fabeb5f3c7b9c
