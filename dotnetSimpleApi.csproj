@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <!-- AWS Elastic Beanstalk stuff https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-dotnet-core-linux.html -->
-    <None Include=".ebextensions\newrelic.config" CopyToOutputDirectory="Always" />
+    <None Include=".ebextensions\newrelic-infra.config" CopyToOutputDirectory="Always" />
+    <None Include=".ebextensions\newrelic-dotnet.config" CopyToOutputDirectory="Always" />
   </ItemGroup>
 </Project>
