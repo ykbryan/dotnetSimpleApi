@@ -14,7 +14,6 @@
 
   <ItemGroup>
     <!-- AWS Elastic Beanstalk stuff https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-dotnet-core-linux.html -->
-    <None Include=".ebextensions\00-datadog-amazon-linux-2.config" CopyToOutputDirectory="Always" />
-    <None Include=".ebextensions\01-datadog-apm.config" CopyToOutputDirectory="Always" />
+    <None Include=".ebextensions\00-datadog.config" CopyToOutputDirectory="Always" />
   </ItemGroup>
 </Project>
