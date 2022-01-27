@@ -11,3 +11,5 @@ cd ./web && zip -r ../web.zip .ebextensions *
 type of API keys from newrelic
 
 newrelic infra and dotnet agents
+
+testing
